@@ -25,7 +25,7 @@ def validate_input(number, min_value, max_value):
    
 def higher_or_lower(guess, answer):
     """This function returns True if user guess is equal to answer and False if guess is higher or lower. 
-       It also prints 'lower', if the guess > answer and 'higher' if the guess < answer
+       It also prints an appropiate message based on users guess
        Args:
         - guess: user's guess
         - answer: random generator number
@@ -33,7 +33,7 @@ def higher_or_lower(guess, answer):
         -bool: True if answer == guess, False otherwise
     """
     if guess > answer:
-        print("Your guess is hihjer tahn the answer")
+        print("Your guess is higher than the answer")
     elif guess < answer:
         print("Your guess is lower than the answer")
     elif guess == answer:
