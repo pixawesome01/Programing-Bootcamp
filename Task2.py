@@ -33,9 +33,9 @@ def higher_or_lower(guess, answer):
         -bool: True if answer == guess, False otherwise
     """
     if guess > answer:
-        print("lower")
+        print("Your guess is hihjer tahn the answer")
     elif guess < answer:
-        print("higher")
+        print("Your guess is lower than the answer")
     elif guess == answer:
         print("Yay you got it")
         return True
@@ -53,7 +53,7 @@ def main():
    
    while user_got_it == False: 
         user_guess = input(f"Enter your guess: ")
-        if validate_input(user_guess, min_value, max_value) == True:
+        if validate_input(user_guess, min_value, max_value) == True: #Checks if the number guessed is between the min and max values
            guess = int(user_guess)
         else:
             continue
