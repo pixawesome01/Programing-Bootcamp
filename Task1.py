@@ -12,7 +12,8 @@ def convert_list_to_integer(lst):
     """
     sum = 0
     for index, number in enumerate(lst):
-        sum = sum + (number * (10 ** (len(lst) - index - 1)))  #first determine the number of zero's: (10 ** (len(lst) - index - 1), the multiply element value and add to sum
+        place_value = (number * (10 ** (len(lst) - index - 1))) 
+        sum = sum + place_value  #first determine the number of zero's: (10 ** (len(lst) - index - 1), the multiply element value and add to sum
     return sum # For example, lst = [1,2,3] will be sum = 100 + 20 + 3
 
 print(convert_list_to_integer([8,3,5,1])) #prints 8351
